@@ -189,9 +189,47 @@ section {
   text-align: center;
 }
 
-.section__text__p2 {
+.typing-text {
   font-size: 1.75rem;
   margin-bottom: 1rem;
+}
+
+.typing-text span{
+  position: relative;
+}
+
+.typing-text span::before{
+  content: "software Developer";
+  color: rgb(85, 85, 85);
+  animation: words 20s infinite;
+}
+
+.typing-text span::after{
+  content: "";
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  border-left: 3px solid black;
+  right: -8;
+  animation: cursor 0.4s infinite;
+}
+
+@keyframes cursor{
+  to{
+      border-left: 3px solid rgb(85, 85, 85);
+  }
+}
+
+@keyframes words{
+  0%, 33%{
+      content: "Android Developer";
+  }
+  34%, 66%{
+      content: "Web Developer";
+  }
+  67%, 100%{
+      content: "Web Designer";
+  }
 }
 
 .title {
