@@ -216,7 +216,7 @@ section {
 
 @keyframes cursor{
   to{
-      border-left: 3px solid rgb(85, 85, 85);
+      border-left: 3px solid rgb(255, 255, 255);
   }
 }
 
